@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Login &middot; Agastya</title>
+		<title>Sign Up &middot; Agastya Dashboard</title>
 		<link rel="publisher" href="https://plus.google.com/+OswaldFoundation">
 
 		<link rel="apple-touch-icon" sizes="180x180" href="https://oswald.foundation/apple-touch-icon.png">
@@ -35,7 +35,7 @@
 
 	<body class="gray">
 
-		<div class="container ma-to-100">
+		<div class="container ma-to-b-100">
 			<div class="row ta-c ma-b-30">
 				<h2>
 					<img width="25px" style="vertical-align:middle;margin-top:-5px;" src="assets/icons/favicon-32x32.png" alt="Oswald Foundation Logo"> Agastya Dashboard
@@ -43,18 +43,26 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-md-push-4 card login-card pa-30">
-					<form action="backend/login" method="post">
+					<form action="backend/signup" method="post">
+						<p>
+							<label for="">Name</label>
+							<input type="text" id="name" name="name" placeholder="Enter your full name" autofocus required>
+						</p>
+						<p>
+							<label for="">Email</label>
+							<input type="text" id="email" name="email" placeholder="Enter your email for communication" required>
+						</p>
 						<p>
 							<label for="">Username</label>
-							<input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+							<input type="text" id="username" name="username" placeholder="Enter your desired username" required>
 						</p>
 						<p>
 							<label for="">Password</label>
-							<input type="password" id="password" name="password" placeholder="Enter your password">
+							<input type="password" id="password" name="password" placeholder="Enter your password" required>
 						</p>
 						<p>
-							<input type="submit" value="Log in" class="button primary">
-							<a href="signup" class="button secondary dis-bl ma-to-10">Sign up</a>
+							<input type="submit" value="Sign up" class="button primary">
+							<a href="login" class="button secondary dis-bl ma-to-10">Log in instead</a>
 						</p>
 					</form>
 				</div>
